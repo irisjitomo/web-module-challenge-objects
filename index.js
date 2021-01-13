@@ -115,8 +115,10 @@ Use the getReviewByIndex function below to do the following:
 */
 
 
-function getReviewByIndex(/*Your code here*/) {
+function getReviewByIndex(arr, index) {
   /*Your code here*/
+  let object = arr[index]
+  return (`${object.name} gave the restaurant a ${object.rating} star review, and their feedback was: ${object.feedback}`)
 }
 
 
@@ -134,8 +136,10 @@ Use the getLastReview function below to do the following:
 */
 
 
-function getLastReview(/*Your code here*/) {
+function getLastReview(arr) {
   /*Your code here*/
+  let lastObject = arr[arr.length - 1]
+  return (`${lastObject.name} gave the restaurant a ${lastObject.rating} star review, and their feedback was: ${lastObject.feedback}`)
 } 
 
 
